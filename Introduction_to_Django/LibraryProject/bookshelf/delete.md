@@ -3,6 +3,8 @@ Delete the book instance and confirm the deletion by retrieving all books again.
 
 ### Command
 ```python
+from bookshelf.models import Book
+book = Book.objects.first()
 book.delete()
 Book.objects.all()
 ```
